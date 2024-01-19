@@ -10,7 +10,7 @@ class Solution:
 
         return s_freq == t_freq
 
-        # Comparing dictionaries in python compares the contents of the dictionary. ie. it compares the key, value pairs of the dictionary.
+# Comparing dictionaries in python compares the contents of the dictionary. ie. it compares the key, value pairs of the dictionary.
 
 
 # initialize two empty dictionaries
