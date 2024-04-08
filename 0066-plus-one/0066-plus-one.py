@@ -10,3 +10,5 @@ class Solution:
             digits[i] = 0
         # If all digits are 9, append 1 to the beginning of the list
         return [1] + digits
+
+    #O(n) time and space complexity
