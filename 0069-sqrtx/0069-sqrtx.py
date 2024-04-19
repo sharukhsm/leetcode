@@ -19,3 +19,6 @@ class Solution:
 #returning right ensures that the function returns the 
 #closest integer that is less than or equal to the square root of x.
         return right
+
+# Time complexity: O(log N)
+# Space: O(1)
