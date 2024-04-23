@@ -27,7 +27,7 @@ class Solution:
             l2 = l2.next if l2 else None
             # Move current pointer to the next node
             current = current.next 
-        # Return the next node after the dummy node (head), which is the actual result
+        # Return the next node after the dummy node (head) in the new LL, which is the actual result
         return head.next
 
         #Note 
