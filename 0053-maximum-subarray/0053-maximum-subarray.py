@@ -18,3 +18,13 @@ class Solution:
             maxi = max(maxi, sum)
         # Return the maximum sum found
         return maxi
+
+
+#Sliding window approach(Algoengine)
+    # def maxSubArray(nums):
+    #     curr_max = 0
+    #     overall_max = float('-inf')
+    #     for num in nums:
+    #         curr_max = max(curr_max + num, num)
+    #         overall_max = max(overall_max, curr_max)
+    #     return overall_max
