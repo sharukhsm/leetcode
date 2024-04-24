@@ -1,5 +1,6 @@
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
+        #Dynamic programming(DP)approach (Kadanes algorithm)
         # Initialize variables to track maximum sum and current sum
          #Initialize maximum sum with the first element of the array
         maxi = nums[0]
