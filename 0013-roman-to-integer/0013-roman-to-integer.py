@@ -41,5 +41,5 @@ class Solution:
 
 # Roman numeral: "XXIV"
 # "X" (10) is followed by "X" (10), so we simply add their values.
-# Then, "I" (1) is smaller than "V" (5), so we subtract "I" from total which is 19. Remember we just add the last char to the totalWe jus add the last char to toal.
+# Then, "I" (1) is smaller than "V" (5), so we subtract "I" from total which is 19. Remember we just add the last char to the total. 
 # So, the total value is 10 + 10 -1 + 5 = 24.
