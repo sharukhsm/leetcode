@@ -6,13 +6,13 @@ class Solution:
         # Create an empty set to store unique frequencies
         s = set()
         
-        for num in counter.values():  # Iterate over the frequencies of elements in counter
-            # If the current frequency v is already in set s,
+        for num_freq in counter.values():  # Iterate over the frequencies of elements in counter
+            # If the current frequency num_freq is already in set s,
             # it means there are duplicate occurrences of the same frequency
-            if num in s:
+            if num_freq in s:
                 return False
             else:             # Otherwise, add the current frequency v to set s
-                s.add(num)
+                s.add(num_freq)
         #If the loop is complete that means there are no duplicates and we return true.
         return True
 
@@ -25,6 +25,9 @@ class Solution:
 
 # Example 1:
 # counter = Counter(arr) 
-# ['1': 3,'2': 2,'3': 1]
+# ['1': 3,'2': 2,'3': 1] #nums and their frequencies.
 
+#counter.values() extracts the frequencies
+
+#Time and space: O(n)
 #Fun fact: this is an apple coding question
