@@ -6,11 +6,12 @@ class Solution:
         #Perform binary search
         while left <= right:
             mid = (left + right) // 2
+            mid_squared = mid *mid
             # If square of mid is less than x, update left pointer
-            if mid * mid < x:
+            if mid_squared < x:
                 left = mid + 1
             # If square of mid is greater than x, update right pointer
-            elif mid * mid > x:
+            elif mid_squared > x:
                 right = mid - 1
             else:  # if mid*mid = x
                 return mid
