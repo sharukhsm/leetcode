@@ -7,15 +7,15 @@ class Solution:
         while L < R:
             M = (L + R) // 2
             # If the value at middle index is greater than the value at right pointer, then
-            # the pivot point lies to the right of middle, so adjust left pointer accordingly
+            # the pivot point lies to the right of middle, so adjust left pointer accordingly.
             if nums[M] > nums[R]:
                 L = M + 1
-            # if nums[M] < nums[R], the pivot point lies to the left of or at middle, 
-            # so adjust right pointer    
+            # If the value at middle index is lesser than the value at right pointer, 
+            # the pivot point lies to the left, or at middle, so adjust right pointer.    
             else:           
                 R = M
-        # At the end of the loop, left pointer points to the minimum element/pivot 
-        # We return either L or R bc they are equal to each other           
+        # At the end of the loop, left pointer points to the minimum element/pivot
+        # We return either L or R bc they are equal to each other.
         return nums[L]
 
 
