@@ -33,7 +33,8 @@ class Solution:
 #and then operations are performed according to the type of operation. In this problem we use Xor operation. 
 
 # Xor property aka exclusive OR
-# if both bits are 0 or both are 1, put 0 else put 1.
+# if both bits are different return 1(true).
+# if both bits are same return 0(false).
 
 # Xor general Example:
 
