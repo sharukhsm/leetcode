@@ -8,7 +8,7 @@ class Solution:
         
         # Iterate until there is no carry left, b holds the carry value.
         while (b & mask > 0):
-            # Calculate the carry and Left shift by 1
+            # Calculate the carry and Left shift it by 1
             # And(&): both bits should be true/1 to return 1, else 0
             # Left shift by 1 simulates the carry operation in binary addition.
             carry = (a & b) << 1
@@ -47,20 +47,23 @@ class Solution:
 
 # Steps:
 # So to add two binaries we need carry, so first calculate carry.
-# Carry can be calculated using &
-# Now add a and b without carry, this can be done using XOR
-# Finally left shift the carry by 1
+# Carry can be calculated using &. left shift the result by 1 and save it in b.
+# Finally, add a and b without carry, this can be done using XOR and save it in a.
+# a is the final sum
 
 # Example 1:
-# Binary Representation:
-# a = 1: Binary representation is 001.
-# b = 2: Binary representation is 010.
-# Iteration 1:
-# carry = a & b: 001 & 010 = 000 (no common bits set).
-# a = a ^ b: 001 ^ 010 = 011 (XOR operation gives the sum without considering carry).
-# b = carry << 1: carry = 000, shift left by 1 bit gives 000.
-# b = 0
-# a = 011 (3)
-# Iteration 2:
-# Since b is 0, so we end the loop and return a.
-# therfore a = 3 
+    # Initial Values:
+    # a = 0001
+    # b = 0010
+    
+    # First Iteration:
+    # carry = (0001 & 0010) << 1 = 0000 << 1 = 0000
+    # a = 0001 ^ 0010 = 0011
+    # b = 0000
+    
+    # Second Iteration:
+    # Since b is now 0, the loop terminates.
+    # The final result is a, which is 0011 in binary, which equals 3 in decimal, so the output is 3.
+    
+    
+    
