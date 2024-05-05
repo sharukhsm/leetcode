@@ -19,4 +19,4 @@ class Solution:
 # Note: this problem is just fibonacci sequence
 # Example: 
 # n = 3
-# [1,1,2,3]  here array is just for representaion purpose.
+# [1,1,2,3]  here this array is just for representaion purpose.
