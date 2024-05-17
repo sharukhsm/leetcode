@@ -1,5 +1,6 @@
 class Solution:
     def climbStairs(self, n: int) -> int:
+        #Dynamic Programming
         #n is the number of steps
         if n == 1:
             return 1
